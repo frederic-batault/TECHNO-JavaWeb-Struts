@@ -26,8 +26,25 @@
 		<s:textfield name="userName" label="Your name" />
 		<s:submit value="Submit" />
 	</s:form>
-	<p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+	<s:url action="registerInput" var="registerInputLink" />
+	<p>
+		<a href="${registerInputLink}">Please register</a> for our prize
+		drawing.
+	</p>
+	<h3>S'enregistrer (français)</h3>
+	<s:url action="registerInput" var="registerInputLinkFR">
+		<s:param name="request_locale">fr</s:param>
+	</s:url>
+	<p>
+		<a href="${registerInputLinkFR}">Veuillez vous enregister</a> pour
+		participer à notre lotterie
+	</p>
 
-	
+	<a href='<s:url action="index" namespace="config-browser" />'>Launch
+		the configuration browser</a>
+
+	<hr />
+	<s:text name="contact" />
+
 </body>
 </html>

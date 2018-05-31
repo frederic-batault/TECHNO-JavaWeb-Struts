@@ -8,6 +8,9 @@
 <title>Hello World!</title>
 </head>
 <body>
+	<h1>
+		<s:text name="greeting" />
+	</h1>
 	<h2>
 		<s:property value="messageStore.message" />
 	</h2>
